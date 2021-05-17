@@ -24,7 +24,7 @@ class ArticleFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence,// Generate a fake sentence
-            'body' => $this->faker->paragraph(5), //Generate fake 30 paragraphs
+            'body' => $this->faker->paragraph(10), //Generate fake 30 paragraphs
             'writer_id' => User::factory(), //Generate a User from factory and extract id
         ];
     }

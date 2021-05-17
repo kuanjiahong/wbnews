@@ -19,20 +19,7 @@ class UserSeeder extends Seeder
             'name'=> 'Admin',
             'email'=> 'admin@example.com',
         ]);
-
-        $writer = User::factory()->create([
-            'name'=> 'Writer',
-            'email'=> 'writer@example.com',
-        ]);
-        
-        $viewer = User::factory()->create([
-            'name'=> 'Viewer',
-            'email'=> 'viewer@example.com',
-        ]);
-
         //Assign User to Role
         $admin->assignRole('admin');
-        $writer->assignRole('writer');
-        $viewer->assignRole('viewer');
     }
 }
