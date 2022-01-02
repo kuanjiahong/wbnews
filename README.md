@@ -60,3 +60,25 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## How to Run this project
+
+1. Ensure `php`, `composer`, `Node.js` and `npm` are installed in local computer
+2. Ensure MySQL is installed in local computer
+
+    2.1 In your MySQL databse, create a database with name `wbnews` 
+ 
+3. In terminal, run command `cp .env.example .env` to create a `.env` file
+4. In file `env`:
+
+    4.1 `DB_USERNAME` is `root` or any username you have in your MySQL
+  
+    4.2 `DB_PASSWORD` should be your password for MySQL database
+  
+5. In terminal/command prompt, run `composer update`
+6. In terminal/command prompt, run `composer install`
+7. In terminal/command promot, run `npm install`
+8. In terminal/command prompt, run `php artisan migrate` to create all the tables
+9. In terminal/command promot, run `php artisan db:seed` to seed the database
+10. Lastly, run `php artisan serve` to launch the website in localhost
+    
