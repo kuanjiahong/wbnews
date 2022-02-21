@@ -81,4 +81,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 8. In terminal/command prompt, run `php artisan migrate` to create all the tables
 9. In terminal/command promot, run `php artisan db:seed` to seed the database
 10. Lastly, run `php artisan serve` to launch the website in localhost
-    
+
+## Some problems you might run into
+
+1. After upload image, the image didn't render
+
+Solution: run `php artisan storage:link` in terminal
+
+Source: https://github.com/spatie/laravel-medialibrary/issues/1312
