@@ -49,8 +49,8 @@ class User extends Authenticatable implements HasMedia
     public function registerMediaConversions(Media $media = null): void
     {
         $this->addMediaConversion('profile')
-              ->width(300)
-              ->height(300);
+              ->width(100)
+              ->height(100);
     }
 
 
